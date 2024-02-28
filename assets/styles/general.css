@@ -10,11 +10,11 @@ body{
     font-family: var(--main-font);
     font-weight: normal;
     font-style: normal;
-    background: var(--bg-white-blue);
+    background: var(--bg-white-blue) !important;
 }
 
 .container{
     margin: 0 auto;
-    max-width:1250px;
+    max-width:1350px;
     padding: 0 20px;
 }

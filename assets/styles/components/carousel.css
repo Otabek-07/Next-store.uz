@@ -1,9 +1,77 @@
 #intro .carousel{
     background-image: limegreen;
-    width: 100%;
+    width: 1230px;
     border-radius: 30px;
     height: 300px;
 }
 #intro .carousel img{
     border-radius: 30px;
+}
+
+#intro .carousel{
+    width: 100%;
+  }
+
+
+  #katigoris .katigoris__blok{
+    width: 100%;
+  }
+  #katigoris .katigoris__blok h2{
+    margin-bottom: 20px;
+  }
+  #katigoris .katigoris__blok__fleks{
+     display: flex;
+  }
+  #katigoris .katigoris__blok__fleks__cards{
+    width: 150px;
+    margin: 20px 0;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    margin-right: 15px;
+    text-align: center;
+    padding: 10px 0;
+    color: #1E1E1E;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+  }
+  #katigoris .katigoris__blok__fleks__cards .batns{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  #katigoris .katigoris__blok__fleks__cards .batns button{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 8px;
+    border-radius: 5px;
+    margin-left: 24px;
+  }
+  #katigoris .katigoris__blok__fleks__cards span{
+    color: blue;
+  }
+  #katigoris .katigoris__blok__fleks__cards p{
+    line-height: 20px;
+    font-size: 13px;
+    padding: 0 15px;
+    margin-top: 8px;
+  }#katigoris .katigoris__blok__fleks__cards .pi{
+    margin: 15px 0;
+    font-size: 12px;
+  }
+  #katigoris .katigoris__blok .btn{
+    width: 99%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border: none;
+  }
+
+#caruselimeg .carusel__imeg{
+  width: 100%;
+  padding: 50px 0;
+  border-radius: 30px;
 }
