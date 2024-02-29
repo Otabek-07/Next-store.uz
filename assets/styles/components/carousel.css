@@ -21,47 +21,31 @@
   }
   #katigoris .katigoris__blok__fleks{
      display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 8px;
   }
   #katigoris .katigoris__blok__fleks__cards{
-    width: 150px;
+    width: 30%;
+    width: 165px;
     margin: 20px 0;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    margin-right: 15px;
+    transition: .4s;
     text-align: center;
     padding: 10px 0;
     color: #1E1E1E;
     border-radius: 5px;
     border: none;
     background-color: #fff;
+    cursor: pointer;
   }
-  #katigoris .katigoris__blok__fleks__cards .batns{
-    display: flex;
-    gap: 8px;
-    align-items: center;
+  #katigoris .katigoris__blok__fleks__cards:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
   }
-  #katigoris .katigoris__blok__fleks__cards .batns button{
-    background-color: blue;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    font-size: 8px;
-    border-radius: 5px;
-    margin-left: 24px;
-  }
-  #katigoris .katigoris__blok__fleks__cards span{
-    color: blue;
-  }
-  #katigoris .katigoris__blok__fleks__cards p{
-    line-height: 20px;
-    font-size: 13px;
-    padding: 0 15px;
-    margin-top: 8px;
-  }#katigoris .katigoris__blok__fleks__cards .pi{
-    margin: 15px 0;
-    font-size: 12px;
-  }
-  #katigoris .katigoris__blok .btn{
-    width: 99%;
+
+.btn{
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     background-color: #fff;
@@ -69,9 +53,158 @@
     cursor: pointer;
     border: none;
   }
-
+#appl .appl__blok{
+   display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+   column-gap: 30px;
+   row-gap: 50px;
+   padding: 50px 0;
+  }
+  #appl .appl__blok__card {
+    background-color: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    transition: .4s;
+    border-radius: 13px;
+    cursor: pointer;
+}
+#appl .appl__blok__card:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+  transform: translate(0px, -8px);
+}
+#appl .appl__blok__card h4{
+  font-size: 18px;
+  color: blue;
+  margin-top: 5px;
+}
+#appl .appl__blok__card p{
+  font-size: 14px;
+  color: #1E1E1E;
+  margin: 8px 0 33px 0;
+  line-height: 20px;
+}
+#appl .appl__blok__card button{
+  padding: 10px 20px;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#appl .appl__blok__card .card__body{
+   text-align: start;
+}
+#appl .appl__blok__card .batns{
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-between;
+  padding-right: 10px;
+}
+#appl .appl__blok__card .batns a i{
+  font-size: 35px;
+}
 #caruselimeg .carusel__imeg{
   width: 100%;
   padding: 50px 0;
   border-radius: 30px;
 }
+
+@media only screen and (max-width:1300px) {
+  #katigoris .katigoris__blok__fleks__cards{
+    flex-wrap: wrap;
+      width: 20%;
+  }
+}
+@media only screen and (max-width:1210px) {
+  #katigoris .katigoris__blok__fleks__cards{
+      width: 20%;
+  }
+}
+
+@media only screen and (max-width: 949px){
+  #appl .appl__blok__card .batns{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+  .batns a i{
+    font-size: 26px !important;
+  }
+  #appl .appl__blok__card button{
+    padding: 7px 15px;
+  }
+}
+@media only screen and (max-width:845px) {
+  #katigoris .katigoris__blok__fleks__cards img{
+      width: 80px;
+      height: 80px;
+  }
+}
+
+
+@media only screen and (max-width: 479px){
+  #katigoris .katigoris__blok__fleks__cards img{
+    width: 50px;
+    height: 40px;
+  }
+  #katigoris .katigoris__blok__fleks__cards p{
+    font-size: 10px;
+    color: #000 !important;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+   .nav__list{
+      gap: 10px !important;
+   }
+   .nav{
+    gap: 10px !important;
+}
+}
+
+@media only screen and (max-width: 900px) {
+   .nav__list{
+       display: none !important;
+   }
+   .header-top{
+    display: none !important;
+ }
+
+}
+
+@media only screen and (max-width:780px){
+  .search__wrapper{
+      max-width: 500px!important;
+      gap: 10px;
+   }
+
+}
+
+@media only screen and (max-width:630px){
+  .search__wrapper{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+   }
+   .search-form{
+    max-width: 250px !important;
+    background-color: red;
+   }
+}
+@media only screen and (max-width:650px){
+ .catalog-btn{
+  width: 100px !important;
+  gap: 10px;
+ }
+ .catalog-btn i{
+  font-size: 15px;
+ }
+ .catalog-btn span{
+  font-size: 10px;
+ }
+
+}
+

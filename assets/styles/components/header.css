@@ -2,7 +2,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 2;
   border-bottom: 1px solid silver;
   background-color: #fff;
 }
@@ -29,56 +29,99 @@ header .header-top a:hover {
 header .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   gap: 230px;
   height: 70px;
 }
 
 header .nav .nav__list {
+  max-width: 260px;
   display: flex;
   list-style: none;
-  gap: 60px;
+  gap: 30px;
   align-items: center;
 }
-
-header .nav .nav__list .nav__list--item:nth-child(3) {
-  display: flex;
-  gap: 40px;
-}
-
-header .nav .nav__list .nav__list--item:nth-child(1) button {
-  background-image: var(--bg-gradient-dark);
-  border: none;
-  padding: 11px 18px;
+header .nav .nav__list .nav__list--item a i {
+  padding: 6px;
   border-radius: 11px;
-  color: #fff;
+  color: blue;
   font-weight: 500;
-  font-size: 16px;
-  display: flex;
+  font-size: 15px;
+  text-decoration: none;
   align-items: center;
   gap: 12px;
   cursor: pointer;
-}
-header .nav .nav__list .nav__list--item:nth-child(1) i {
   font-size: 28px;
-  margin-top: -4px;
 }
+header .nav .nav__list .nav__list--item:last-child  a i{
+  color: #4e4f51 !important;
+  background-color: #E4E7EE;
+  border-radius: 50%;
+}
+
 
 header .nav .nav__list .nav__list--item:nth-child(1) button:hover {
   background-image: var(--bg-gradient-white);
   color: #000000;
 }
 
-header .nav .nav__list .nav__list--item .search__wrapper {
-  width: 396px;
+header .nav  .search__wrapper {
+  max-width: 650px;
   height: 46px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border-radius: 8px;
-  overflow: hidden;
+  gap: 60px;
   border: 2px solid var(--bg-silver);
 }
 
+.catalog-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  width: 150px;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background :var( --bg-gradient-dark) !important;
+  
+}
+.catalog-btn i{
+  font-size: 18px;
+  color: #fff;
+}
+.catalog-btn span{
+  font-size: 18px;
+  color: #fff;
+
+}
+.search-form{
+  display: flex;
+  width: 396px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+.search-form input{
+  flex: 1;
+  text-indent: 15px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.search-form button{
+  height: 100%;
+  width: 60px;
+  border: none;
+  background-color: blue;
+}
+.search-form button i{
+  color: #fff;
+  font-size: 20px;
+}
 header .nav .nav__list .nav__list--item .search__wrapper input {
   flex-grow: 1;
   border: none;
@@ -99,7 +142,7 @@ header .nav .nav__list .nav__list--item .search__wrapper button {
 
 header .nav .nav__list .nav__list--item .search__wrapper button:hover {
   background-color: #0000ffbd;
-  color: aliceblue;
+  /* color: aliceblue; */
   cursor: pointer;
 }
 

@@ -1,0 +1,19 @@
+#footr{
+    background:var(--bg-gradient-white);
+}
+#footr .container .footr__blok{
+    width: 100%;
+    display: flex;
+    padding: 80px 0;
+    justify-content: space-around;
+}
+.footr__blok ul{
+    list-style-type: none;
+}
+.footr__blok ul li a{
+    text-decoration: none;
+    line-height: 30px;
+}
+hr{
+    border-bottom: rebeccapurple;
+}
