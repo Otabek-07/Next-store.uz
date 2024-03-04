@@ -7,6 +7,12 @@
   <title>Nextstore.uz Internet do'koni!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- FONT AWISON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css ">
+  <!-- FONT AWISON -->
+
+
   <!-- ------ Favicons ------- -->
   <link rel="icon" href="./public/Logo.svg" />
   <!-- -----  Main.css ---------- -->
@@ -48,6 +54,26 @@
   <header>
 
     <div class="container">
+
+        <!-- <div class="input">
+           <h2>login</h2>
+           <form action="#">
+             <div>
+              <input type="text">
+              <label for="#">Username</label>
+             </div>
+               <div>
+                <input type="password">
+                <label for="#">password</label>
+               </div>
+                <h3>Forgot Password</h3>
+                <input type="submit" value="Login">
+                <div class="link">
+                  Not a member? <a href="#">Signup</a>
+                </div>
+           </form>
+        </div> -->
+
       <div class="header-top">
         <span></span>
         <a href="#">
@@ -65,23 +91,23 @@
         </a>
 
         <div class="search__wrapper">
-          <button class="catalog-btn">
+          <button class="catalog-btn" id="toggle">
             <i class="bx bx-menu"></i>
             <span>KATALOG</span>
           </button>
-         <form class="search-form" >
-          <input type="text" placeholder="Maxsulotlarni izlash" />
-          <button>
-            <i class="bx bx-search"></i>
-          </button>
-         </form>
+          <form class="search-form">
+            <input type="text" placeholder="Maxsulotlarni izlash" />
+            <button>
+              <i class="bx bx-search"></i>
+            </button>
+          </form>
         </div>
 
         <ul class="nav__list">
           <li class="nav__list--item">
             <a href="#"><i class="bx bx-heart"></i></a>
           </li>
-          <li  class="nav__list--item" >
+          <li class="nav__list--item">
             <a href="#"><i class="bx bx-cart"></i></a>
           </li>
           <li class="nav__list--item">
@@ -92,74 +118,523 @@
       </nav>
     </div>
   </header>
+
+     
   <!-- ============================= HEADER END ========================== -->
+  <div class="container relative">
+    <div id="menu-panel" class="menu-panel hide-menu">
+      <ul class="menu-grid">
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#hovola" target="_blank"><b>Xarid uchun hovolani bosing</b></a></li>
+            <li><a href="#"><h3>Kompyuterlar va notebooklar </h3></a></li>
+            <li><a href="#">Telefonlar</a></li>
+            <li><a href="#">Maishiy texnika</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+            <li><a href="#">lorem ipsum dolor</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#hovola" target="_blank"><b>Xarid uchun hovolani bosing</b></a></li>
+            <li><a href="#"><h3>Brentlar</h3></a></li>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Vivo</a></li>
+            <li><a href="#">Tecno</a></li>
+            <li><a href="#">Realme</a></li>
+            <li><a href="#">Xiaomi</a></li>
+            <li><a href="#">Nokia</a></li>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Artel</a></li>
+            <li><a href="#">Huawei</a></li>
+            <li><a href="#">Alcatel</a></li>
+            <li><a href="#">Tecno</a></li>
+            <li><a href="#">Alcatel</a></li>
+            <li><a href="#">Ko’proq</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#hovola" target="_blank"><b>Xarid uchun hovolani bosing</b></a></li>
+            <li><a href="#"><h3>Samsung brendi</h3></a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+          <ul>
+            <li class="pas"><a href="#"> <h3>Huawei</h3></a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#"><b>Xarid uchun hovolani bosing</b></a></li>
+            <li><a href="#"> <h3>Redmi & Xiaomi</h3></a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+          <ul>
+            <li class="pas"><a href="#"> <h3>Eng ommabop </h3></a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-grid-item">
+          <ul>
+            <li><a href="#hovola" target="_blank"><b>Xarid uchun hovolani bosing</b></a></li>
+            <li><a href="#"> <h3>Eng ommabop </h3></a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+          <ul>
+            <li class="pas"><a href="#"> <h3>Eng arzonlari </h3></a></li>
+            <li><a href="#">S serialar </a></li>
+            <li><a href="#">A serialar </a></li>
+            <li><a href="#">Note serilar</a></li>
+            <li><a href="#">M serialar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <main>
-    <!-- MAIN INTRO START -->
-    <section id="intro">
-      <div class="container">
-        <div class="carousel">
-          <!-- <img src="./assets/images/intr-banner.jpg" alt="Intro imigis baner"> -->
+  
 
-          <div style="--swiper-navigation-color: #000; --swiper-pagination-color: #fff" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img src="./assets/images/intr-banner.jpg" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img src="./assets/images/ipgone.jpg" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img src="./assets/images/macbook.png" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img src="./assets/images/cleaner.png" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img src="./assets/images/kondisaner.png" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-zoom-container">
-                  <img src="./assets/images/artel.png" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+
+
+    <!-- Sotuv bo'limi boshlandi -->
+
+    <section id="product">
+
+      <div class="container">
+
+        <div class="product__blok">
+
+          <div class="product__bloks" data-name="p-1" id="hovola">
+            <img src="./assets/images/imegsarever.jpg" alt="server">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
           </div>
 
-          <!-- Swiper JS -->
-          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <div class="product__bloks" data-name="p-2">
+            <img src="./assets/images/macbook.png" alt="Macbook pro">
+            <h3>Laptop Notebooklar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">1234 ta maxsulot</div>
+          </div>
 
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              zoom: true,
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-            });
-          </script>
+          <div class="product__bloks" data-name="p-3">
+            <img src="./assets/images/imegaymak.jpg" alt="Manito'r">
+            <h3>Shaxsiy kompyuter uchun monitorlar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+
+          <div class="product__bloks" data-name="p-4">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-5">
+            <img src="./assets/images/macbook.png" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-6">
+            <img src="./assets/images/imegsichqoncha.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-7">
+            <img src="./assets/images/imegsarever.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-8">
+            <img src="./assets/images/imegaymak.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-9">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-10">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-11">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-12">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-13">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-14">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-15">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+            <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+          <div class="product__bloks" data-name="p-16">
+            <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+            <h3>Shaxsiy kompyuter uchun keyslar</h3>
+             <b>Xarid uchun bosing</b>
+            <div class="price">232 ta maxsulot</div>
+          </div>
+
         </div>
+
       </div>
     </section>
-    <!-- MAIN INTRO END -->
+    <!-- Sotuv bo'limi tugadi -->
+
+
+     <!--  -->
+       <div class="product__prev">
+
+             <div class="prev" data-trget="p-1">
+                  <i class="fas fa-times"></i>
+                 <img src="./assets/images/imegsarever.jpg" alt="Server">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-2">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/macbook.png" alt="Macbook">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-3">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imegaymak.jpg" alt="Manitor">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-4">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-5">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/macbook.png" alt="Macbook">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-6">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imegsichqoncha.jpg" alt="Sichqoncha">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-7">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imegsarever.jpg" alt="Server">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-8">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imegaymak.jpg" alt="Server">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-9">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-10">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-11">
+              <i class="fas fa-times"></i>
+              <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+              <h3>Shaxsiy kompyuter uchun keyslar</h3>
+              <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-12">
+              <i class="fas fa-times"></i>
+              <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+              <h3>Shaxsiy kompyuter uchun keyslar</h3>
+              <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-13">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-14">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-15">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+             <div class="prev" data-trget="p-16">
+              <i class="fas fa-times"></i>
+                 <img src="./assets/images/imgquloqchin.jpg" alt="Quloqchin">
+                 <h3>Shaxsiy kompyuter uchun keyslar</h3>
+                 <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>(250)</span>
+                 </div>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <div class="price">$2.00</div>
+                  <div class="buttons">
+                     <a href="#" class="buy">buy now</a>
+                     <a href="#" class="cart">add to cart</a>
+                  </div>
+             </div>
+       </div>
+    <!--  -->
+
 
     <section id="katigoris">
       <div class="container">
@@ -201,607 +676,106 @@
             </div>-->
 
           </div>
-          <button class="btn">Batafsil</button>
         </div>
 
     </section>
 
-
-    <!-- Appl start -->
-    <section id="appl">
-
-      <div class="container">
-           <h2>Eng ko’p sotilgan</h2>
-        <div class="appl__blok">
-
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-
-
-        </div>
-        <button class="btn">Ko’proq ko’rish</button>
-      </div>
-    </section>
-    <!-- Appl end -->
-
-    <section id="caruselimeg">
-      <div class="container">
-        <div class="carusel__imeg">
-          <img src="./assets/images/banner-middle.jpg" alt="Baner carusel">
-        </div>
-      </div>
-    </section>
-
-
-    <section id="appl">
-      <div class="container">
-        
-        <h2>Eng ko’p sotilgan</h2>
-        <div class="appl__blok">
-
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-
-
-        </div>
-        <button class="btn">Ko’proq ko’rish</button>
-      </div>
-    </section>
-
-
-    <!--  -->
-    <section id="appl">
-
-      <div class="container">
-                 <h2>Brendlar bo’yicha</h2> 
-        <div class="appl__blok">
-
-          <div class="appl__blok__card">
-            <img src="./assets/images/imghp.jpg" alt="hp">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p> HP , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/imgasus.jpg" alt="Asus">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Asus, qora rangda</p>
-              <p>200 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/imgsamsung.jpg" alt="Samsung">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Samsung, gold rangda</p>
-              <p>270 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/imgshaxmat.jpg" alt="rasm bor">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Blue rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/imgshaxmat.jpg" alt="rasm bor">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p> Mit Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/imgshaxmat.jpg" alt="buyurtma rasm bor">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Susi Pro simsiz quloqchin , Oq rangda</p>
-              <p>250 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/imgshaxmat.jpg" alt="Buyerda rasm bor">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Muse Pro simsiz quloqchin , Oq rangda</p>
-              <p>400 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-          <div class="appl__blok__card">
-            <img src="./assets/images/macbook.png" alt="Macbook pro">
-
-            <div class="card__body">
-              <h4>16 114 285 so'm</h4>
-              <p>Apple Airpods Pro simsiz quloqchin , Oq rangda</p>
-              <p>230 ta buyurtma</p>
-            </div>
-
-            <div class="batns">
-              <button>Sotib olish</button>
-              <a href="#"><i class="bx bx-cart"></i></a>
-            </div>
-
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-
-    
-    <section id="caruselimeg">
-      <div class="container">
-        <div class="carusel__imeg">
-          <img src="./assets/images/banner-middle.jpg" alt="Baner carusel">
-        </div>
-      </div>
-    </section>
   </main>
-  
+
 
   <footer>
-       <section id="footr">
-         <div class="container">
-                <div class="footr__blok">
-                     <ul>
-                        <li>
-                           <a href=""><h3>Hujjatlar</h4></a>
-                        </li>
-                        <li>
-                           <a href="">Umumiy shartlar</a>
-                        </li>
-                        <li>
-                           <a href="">Ofertalar arxivi</a>
-                        </li>
-                        <li>
-                           <a href="">Nizom</a>
-                        </li>
-                        <li>
-                           <a href="">Guvohnoma</a>
-                        </li>
-                     </ul>
-                     <ul>
-                        <li>
-                           <a href=""><h3>Servis</h3></a>
-                        </li>
-                        <li>
-                           <a href="">Umumiy shartlar</a>
-                        </li>
-                        <li>
-                           <a href="">Ofertalar arxivi</a>
-                        </li>
-                        <li>
-                           <a href="">Nizom</a>
-                        </li>
-                        <li>
-                           <a href="">Guvohnoma</a>
-                        </li>
-                     </ul>
-                     <ul>
-                        <li>
-                           <a href=""><h3>Mahsulotlar katalogi</h3></a>
-                        </li>
-                        <li>
-                           <a href="">Umumiy shartlar</a>
-                        </li>
-                        <li>
-                           <a href="">Ofertalar arxivi</a>
-                        </li>
-                        <li>
-                           <a href="">Nizom</a>
-                        </li>
-                        <li>
-                           <a href="">Guvohnoma</a>
-                        </li>
-                     </ul>
-                     <ul>
-                        <li>
-                           <a href=""><h3>Axbarot xizmati</h3></a>
-                        </li>
-                        <li>
-                           <a href="">Umumiy shartlar</a>
-                        </li>
-                        <li>
-                           <a href="">Ofertalar arxivi</a>
-                        </li>
-                        <li>
-                           <a href="">Nizom</a>
-                        </li>
-                        <li>
-                           <a href="">Guvohnoma</a>
-                        </li>
-                     </ul>
+    <section id="footr">
+      <div class="container">
+        <div class="footr__blok">
+          <ul>
+            <li>
+              <a href="">
+                <h3>Hujjatlar</h4>
+              </a>
+            </li>
+            <li>
+              <a href="">Umumiy shartlar</a>
+            </li>
+            <li>
+              <a href="">Ofertalar arxivi</a>
+            </li>
+            <li>
+              <a href="">Nizom</a>
+            </li>
+            <li>
+              <a href="">Guvohnoma</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="">
+                <h3>Servis</h3>
+              </a>
+            </li>
+            <li>
+              <a href="">Umumiy shartlar</a>
+            </li>
+            <li>
+              <a href="">Ofertalar arxivi</a>
+            </li>
+            <li>
+              <a href="">Nizom</a>
+            </li>
+            <li>
+              <a href="">Guvohnoma</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="">
+                <h3>Mahsulotlar katalogi</h3>
+              </a>
+            </li>
+            <li>
+              <a href="">Umumiy shartlar</a>
+            </li>
+            <li>
+              <a href="">Ofertalar arxivi</a>
+            </li>
+            <li>
+              <a href="">Nizom</a>
+            </li>
+            <li>
+              <a href="">Guvohnoma</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="">
+                <h3>Axbarot xizmati</h3>
+              </a>
+            </li>
+            <li>
+              <a href="">Umumiy shartlar</a>
+            </li>
+            <li>
+              <a href="">Ofertalar arxivi</a>
+            </li>
+            <li>
+              <a href="">Nizom</a>
+            </li>
+            <li>
+              <a href="">Guvohnoma</a>
+            </li>
+          </ul>
 
-                    
-                </div>
 
-                <hr>
-                <br>
-                <p>2022  Nextstore.com</p>
-                 <br> <br>
-         </div>
-       </section>
+        </div>
+
+        <hr>
+        <br>
+        <p>2022 Nextstore.com</p>
+        <br> <br>
+      </div>
+    </section>
   </footer>
+
+  <script src="./idex.js"></script>
 </body>
 
 </html>

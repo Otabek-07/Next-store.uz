@@ -15,6 +15,7 @@
 
   #katigoris .katigoris__blok{
     width: 100%;
+    padding: 50px;
   }
   #katigoris .katigoris__blok h2{
     margin-bottom: 20px;
@@ -53,126 +54,55 @@
     cursor: pointer;
     border: none;
   }
-#appl .appl__blok{
-   display: grid;
-   grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
-   column-gap: 30px;
-   row-gap: 50px;
-   padding: 50px 0;
-  }
-  #appl .appl__blok__card {
-    background-color: #fff;
-    padding: 10px 30px;
-    text-align: center;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    transition: .4s;
-    border-radius: 13px;
-    cursor: pointer;
-}
-#appl .appl__blok__card:hover{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
-  transform: translate(0px, -8px);
-}
-#appl .appl__blok__card h4{
-  font-size: 18px;
-  color: blue;
-  margin-top: 5px;
-}
-#appl .appl__blok__card p{
-  font-size: 14px;
-  color: #1E1E1E;
-  margin: 8px 0 33px 0;
-  line-height: 20px;
-}
-#appl .appl__blok__card button{
-  padding: 10px 20px;
-  color: #fff;
-  background-color: blue;
-  border: none;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-#appl .appl__blok__card .card__body{
-   text-align: start;
-}
-#appl .appl__blok__card .batns{
-  display: flex;
-  /*align-items: center;*/
-  justify-content: space-between;
-  padding-right: 10px;
-}
-#appl .appl__blok__card .batns a i{
-  font-size: 35px;
-}
+
 #caruselimeg .carusel__imeg{
   width: 100%;
   padding: 50px 0;
   border-radius: 30px;
 }
 
+@media only screen and (max-width: 1380px) {
+  .nav__list{
+     gap: 10px !important;
+  }
+  .nav{
+   gap: 10px !important;
+}
+}
 @media only screen and (max-width:1300px) {
   #katigoris .katigoris__blok__fleks__cards{
     flex-wrap: wrap;
       width: 20%;
   }
 }
+
 @media only screen and (max-width:1210px) {
   #katigoris .katigoris__blok__fleks__cards{
       width: 20%;
   }
 }
 
-@media only screen and (max-width: 949px){
-  #appl .appl__blok__card .batns{
-    display: flex;
-    /*align-items: center;*/
-    justify-content: space-between;
-    padding-right: 10px;
-  }
-  .batns a i{
-    font-size: 26px !important;
-  }
-  #appl .appl__blok__card button{
-    padding: 7px 15px;
-  }
-}
-@media only screen and (max-width:845px) {
-  #katigoris .katigoris__blok__fleks__cards img{
-      width: 80px;
-      height: 80px;
-  }
-}
-
-
-@media only screen and (max-width: 479px){
-  #katigoris .katigoris__blok__fleks__cards img{
-    width: 50px;
-    height: 40px;
-  }
-  #katigoris .katigoris__blok__fleks__cards p{
-    font-size: 10px;
-    color: #000 !important;
-  }
-}
-
-@media only screen and (max-width: 1380px) {
-   .nav__list{
-      gap: 10px !important;
-   }
-   .nav{
-    gap: 10px !important;
-}
-}
 
 @media only screen and (max-width: 900px) {
-   .nav__list{
-       display: none !important;
-   }
-   .header-top{
-    display: none !important;
- }
+  .nav__list{
+      display: none !important;
+  }
+  .header-top{
+   display: none !important;
+}
 
+}
+@media only screen and (max-width: 850px){
+   #footr .footr__blok{
+     font-size: 12px;
+   }
+}
+
+@media only screen and (max-width:845px) {
+  #katigoris .katigoris__blok__fleks__cards img{
+      width: 70px;
+      height: 70px;
+  }
 }
 
 @media only screen and (max-width:780px){
@@ -182,29 +112,117 @@
    }
 
 }
+@media only screen and (max-width: 700px){
+  #katigoris .katigoris__blok__fleks__cards img{
+    width: 60px;
+    height: 60px;
+  }
+  #katigoris .katigoris__blok__fleks__cards p{
+    font-size: 12px;
+    color: #000 !important;
+  }
+}
+@media only screen and (max-width: 660px){
+  #footr .footr__blok{
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+@media only screen and (max-width:650px){
+  .catalog-btn{
+   width: 100px !important;
+   gap: 5px;
+  }
+  .catalog-btn i{
+   font-size: 15px;
+  }
+  .catalog-btn span{
+   font-size: 10px;
+  }
+ 
+ }
+ @media only screen and (max-width:650px){
+  
+   .search-form{
+    max-width: 280px !important;
+   }
+}
 
 @media only screen and (max-width:630px){
   .search__wrapper{
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      gap: 5px;
    }
    .search-form{
-    max-width: 250px !important;
-    background-color: red;
+    max-width: 230px !important;
    }
-}
-@media only screen and (max-width:650px){
- .catalog-btn{
-  width: 100px !important;
-  gap: 10px;
- }
- .catalog-btn i{
-  font-size: 15px;
- }
- .catalog-btn span{
-  font-size: 10px;
- }
-
+   #katigoris .katigoris__blok__fleks__cards img{
+    width: 45px;
+    height: 45px;
+  }
+  #katigoris .katigoris__blok__fleks__cards p{
+    font-size: 10px;
+    color: #000 !important;
+  }
 }
 
+@media only screen and (max-width: 560px){
+  .search-form{
+    max-width: 270px !important;
+    height: 40px;
+   }
+    .catalog-btn{
+      display: none;
+    }
+}
+@media only screen and (max-width: 480px){
+  .search-form{
+    max-width: 220px !important;
+    height: 35px;
+   }
+  #katigoris .katigoris__blok__fleks__cards img{
+    width: 45px;
+    height: 35px;
+  }
+  #katigoris .katigoris__blok__fleks__cards p{
+    font-size: 7px;
+    color: #000 !important;
+  }
+}
+@media only screen and (max-width: 390px){
+  #katigoris .katigoris__blok__fleks__cards img{
+    width: 30px;
+    height: 30px;
+  }
+  #katigoris .katigoris__blok__fleks__cards p{
+    font-size: 5px;
+    color: #000 !important;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .appl__blok{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .appl__blok__card{
+    width: 100px;
+    height: 100px;
+  }
+  .carousel{
+    display: none;
+  }
+}
+
+
+
+/*.madal{
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(3, 82, 82);
+  position: fixed;
+}*/
